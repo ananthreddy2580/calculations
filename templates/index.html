@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculations</title>
+</head>
+<body>
+<form style="text-align:center;" action="/analyze" method="post"> {%csrf_token%}
+    <br><br><br><br>
+    <label>num1 : </label>
+    <input name='n1' type="text">
+    <br><br>
+    <label>num2 : </label>
+    <input name='n2' type="text">
+    <br><br>
+  <select name="calc" id="calc" multiple>
+    <option value="add">Addition</option>
+    <option value="sub">Substraction</option>
+    <option value="mul">multiplication</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
